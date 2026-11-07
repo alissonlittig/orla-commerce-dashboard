@@ -49,3 +49,10 @@ code{background:#e9e5d8;padding:1px 5px;border-radius:5px}
 @media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:480px){.top{position:static}.kpis{gap:10px}.kpi{padding:13px 13px 9px}.card{padding:14px 12px 8px}.seg button{padding:6px 10px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* reserve space before JS renders: avoids layout shift */
+.kpis{min-height:152px}#c-rev,#c-aov{min-height:260px}#c-fun{min-height:230px}#c-cat{min-height:200px}#c-ch{min-height:250px}#c-coh{min-height:490px}
+@media(max-width:900px){.kpis{min-height:316px}}
+@media(max-width:520px){#c-rev,#c-aov{min-height:210px}.kpis{min-height:300px}}
+.seg{min-height:38px;min-width:176px}.chips{min-height:34px}.note{min-height:21px}
+@media(max-width:480px){.chips{min-height:74px;width:100%}}
+@media(max-width:700px){.controls{width:100%}}

@@ -1,4 +1,4 @@
-// Deterministic synthetic data for the fictional store "Orla". No real customers or orders.
+// Deterministic synthetic data for the fictional store "Vela". No real customers or orders.
 import { writeFileSync } from 'node:fs';
 
 let s = 20261107;
@@ -54,7 +54,7 @@ const cohorts = months.map((m, i) => {
 });
 
 writeFileSync(new URL('../public/data.json', import.meta.url), JSON.stringify({
-  meta: { store: 'Orla', currency: 'USD', synthetic: true, from: rows[0].d, to: rows.at(-1).d },
+  meta: { store: 'Vela', currency: 'USD', synthetic: true, from: rows[0].d, to: rows.at(-1).d },
   channels: Object.keys(channels), categories: Object.keys(categories), rows, catByMonth, cohorts,
 }));
 console.log(`rows=${rows.length} cohorts=${cohorts.length}`);

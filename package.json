@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Orla Commerce Pulse - e-commerce analytics dashboard (sales, AOV, funnel, cohorts) on synthetic data.",
+  "description": "Vela Commerce Pulse - e-commerce analytics dashboard (sales, AOV, funnel, cohorts) on synthetic data.",
   "scripts": {
     "data": "node scripts/generate-data.mjs",
     "dev": "vite",

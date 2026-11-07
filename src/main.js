@@ -110,7 +110,7 @@ function funnelChart(f) {
     const inside = x(s.ofTop) > 150;
     g.append('text').attr('x', lab + (inside ? x(s.ofTop) - 8 : x(s.ofTop) + 8)).attr('y', 24).attr('text-anchor', inside ? 'end' : 'start')
       .attr('font-size', 12.5).attr('font-weight', 600).attr('fill', inside ? '#fff' : '#1b1a17')
-      .text(pct(s.ofTop) + (i && inside ? ` · ${pct(s.step)} of prev.` : ''));
+      .text(pct(s.ofTop) + (i && inside && pct(s.step) !== pct(s.ofTop) ? ` · ${pct(s.step)} of prev.` : ''));
   });
 }
 
